@@ -24,7 +24,7 @@ public class Ch13_Calendar {
         System.out.println("Month:\t\t\t" + gregCal.get(Calendar.MONTH));
         System.out.println("Last day of month:\t" + gregCal.getMaximum(Calendar.DAY_OF_MONTH));*/
         
-        int lastDay = gregCal.getMaximum(Calendar.DAY_OF_MONTH);
+        int lastDay = gregCal.getActualMaximum(Calendar.DAY_OF_MONTH);
         String mm = gregCal.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.getDefault());
         System.out.println("          " + mm + ", " + yy);
         
@@ -54,7 +54,7 @@ public class Ch13_Calendar {
             }
         } 
         
-        System.out.println("\n" + mm + ", " + yy + " contains " + gregCal.getMaximum(Calendar.DAY_OF_MONTH) + " days.");
+        System.out.println("\n" + mm + ", " + yy + " contains " + gregCal.getActualMaximum(Calendar.DAY_OF_MONTH) + " days.");
         
         
         
